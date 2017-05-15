@@ -24,7 +24,7 @@ body {
 }
 
 section {
-    min-height: 92vh;
+    /*min-height: 92vh;*/
     margin-top: -1.5em;
 }
 
@@ -40,6 +40,14 @@ h1 {
 
 h2 {
     font-size: 4em;
+}
+
+p {
+    margin: 0.75em 0;
+}
+
+.row {
+    padding: 4em 0;
 }
 
 
@@ -86,7 +94,8 @@ nav ul li.active {
 /*          ABOUT               */
 
 .about {
-    background-color: #FFFFFF;
+    background-color: #927982;
+    color: #FFF;
 }
 
 .me {
@@ -94,16 +103,11 @@ nav ul li.active {
     border-radius: 5%;
 }
 
-.row {
-    padding: 4em 0;
-}
-
 
 /*          SKILLS              */
 
 .skills {
-    background-color: #927982;
-    color: #FFF;
+    background-color: #FFFFFF;
 }
 
 .group {
@@ -113,7 +117,22 @@ nav ul li.active {
 
 .skills p {
     display: inline-block;
-    margin: 0.5em 0;
+}
+
+span {
+    color: #BC5478;
+}
+
+.pets {
+    padding-top: 2em;
+}
+
+
+/*          WORK                  */
+
+.work {
+    background-color: #BC5478;
+    color: #FFF;
 }
 
 
