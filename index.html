@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sara Kevorkian</title>
+    <link href="https://fonts.googleapis.com/css?family=Imprima" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -18,13 +19,14 @@
             <h3 class="role">Web Developer <i class="fa fa-tree" aria-hidden="true"></i> Seattle, WA</h3>
         </div>
     </section>
+    <!-- make show up after scroll, include links that turn into below -->
     <nav>
         <div class="nav-wrapper">
             <div class="nav-inner">
                 <a href="#home" class="brand-logo">Sara Kevorkian</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#">Work</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="https://drive.google.com/file/d/0B-QGpzhHF3d0VGtpV3hacURnM0k/view" target="_blank">Resume</a></li>
@@ -46,27 +48,22 @@
             </div>
         </div>
     </section>
-    <section class="skills center-align">
-        <div class="row">
-            <h2>Skills</h2>
-            <div class="col s6">
-                <h4>Languages</h4>
-                <p>HTML5, CSS3, JavaScript, SQL</p>
-            </div>
-            <div class="col s6">
-                <h4>Frameworks/Libraries</h4>
-                <p>Bootstrap, Materialize, Angular.js, Node.js, Express.js, JQuery</p>
-            </div>
-            <div class="col s6">
-                <h4>Databases</h4>
-                <p>PostreSQL, Sequelize, NoSQL, MongoDB, Mongoose</p>
-            </div>
-            <div class="col s6">
-                <h4>Other</h4>
-                <p>AJAX, APIs, Git/GitHub, Heroku, Sublime Text 3, Microsoft Office </p>
+    <section id="skills" class="skills">
+        <div class="row center-align">
+            <div class="col s8 offset-s2">
+                <h2>Skills</h2>
+                <div class="left-align">
+                    <p><span class="group">Languages:</span> HTML5, CSS3, JavaScript, SQL</p>
+                    <p><span class="group">Frameworks/Libraries: </span>Bootstrap, Materialize, Angular.js, Node.js, Express.js, JQuery</p>
+                    <p><span class="group">Databases: </span>PostreSQL, Sequelize, NoSQL, MongoDB, Mongoose</p>
+                    <p><span class="group">Other: </span>AJAX, APIs, Git/GitHub, Heroku, Sublime Text 3, Microsoft Office </p>
+                </div>
             </div>
         </div>
     </section>
+    <footer class="center-align">
+        &#9400; 2017 Sara Kevorkian
+    </footer>
 </body>
 
 </html>
