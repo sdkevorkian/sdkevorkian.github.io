@@ -135,6 +135,63 @@ span {
     color: #FFF;
 }
 
+.work img {
+    max-width: 100%;
+}
+
+.card,
+.card img.activator,
+.card .card-reveal {
+    border-radius: 5% 5% 0 0;
+}
+
+.card .card-content p,
+.card p,
+.card .card-title {
+    color: #FFF;
+}
+
+.card .card-content {
+    padding: 12px 24px;
+}
+
+.card .card-action {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    min-height: 3.75em;
+}
+
+.card,
+.card .card-reveal {
+    background-color: #927982;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: #FFF;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+    color: #BC5478;
+}
+
+
+/*          CONTACT            */
+
+.contact {
+    background-color: #FFF;
+}
+
+.contact-box {
+    font-size: 4em;
+}
+
+
+/*          RESUME              */
+
+.resume {
+    background-color: #927982;
+    color: #FFF;
+}
+
 
 /*          FOOTER              */
 
