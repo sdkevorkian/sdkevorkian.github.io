@@ -76,6 +76,10 @@ p {
 
 /*      NAV                 */
 
+nav {
+    z-index: 10;
+}
+
 .nav-wrapper {
     background-color: #755E6A;
 }
