@@ -23,7 +23,7 @@
         </div>
     </section>
     <!-- make show up after scroll, include links that turn into below -->
-    <nav id="pin-this-nav" data-target="home">
+    <nav id="pin-this-nav">
         <div class="nav-wrapper">
             <div class="nav-inner">
                 <a href="#home" class="brand-logo">Sara Kevorkian</a>
@@ -38,24 +38,26 @@
         </div>
     </nav>
     <section id="about" class="about center-align">
-        <div class="row">
-            <h2>About</h2>
-            <div class="col m3 s12">
-                <img class="me" src="images/me.jpg" alt="Sara Kevorkian">
-            </div>
-            <div class="flow-text col m7 s12 offset-m1 valign-wrapper ">
-                <div>
-                    <p>Hi, I'm Sara! I grew up near Seattle and enjoy living in the PNW.</p>
-                    <p>I am an observant full stack developer that learns quickly by identifying patterns in new material. My experience in biotech has taught me the importance of flexibility and the mindset to break concepts down into testable pieces. I make every hour happy hour and bring a balance of fun and serious work ethic to any team.</p>
-                    <p><i class="fa fa-paw" aria-hidden="true"></i>
-                        <i class="fa fa-paw" aria-hidden="true"></i>
-                        <i class="fa fa-paw" aria-hidden="true"></i>
-                        <i class="fa fa-paw" aria-hidden="true"></i></p>
-                    <p>I love pets and have a dog and 3 cats.</p>
-                    <div class="row pets">
-                        <img class="col s4" src="images/hobbesHarvey.png" alt="orange cat and tortoiseshell cat">
-                        <img class="col s4" src="images/zero.png" alt="merle dog">
-                        <img class="col s4" src="images/mickey.png" alt="tuxedo cat">
+        <div class="container">
+            <div class="row">
+                <h2>About</h2>
+                <div class="col m4 s12">
+                    <img class="me" src="images/me.jpg" alt="Sara Kevorkian">
+                </div>
+                <div class="flow-text col m8 s12 valign-wrapper ">
+                    <div>
+                        <p>Hi, I'm Sara! I grew up near Seattle and enjoy living in the PNW.</p>
+                        <p>I am an observant full stack developer that learns quickly by identifying patterns in new material. My experience in biotech has taught me the importance of flexibility and the mindset to break concepts down into testable pieces. I make every hour happy hour and bring a balance of fun and serious work ethic to any team.</p>
+                        <p><i class="fa fa-paw" aria-hidden="true"></i>
+                            <i class="fa fa-paw" aria-hidden="true"></i>
+                            <i class="fa fa-paw" aria-hidden="true"></i>
+                            <i class="fa fa-paw" aria-hidden="true"></i></p>
+                        <p>I love pets and have a dog and 3 cats.</p>
+                        <div class="row pets">
+                            <img class="col s4" src="images/hobbesHarvey.png" alt="orange cat and tortoiseshell cat">
+                            <img class="col s4" src="images/zero.png" alt="merle dog">
+                            <img class="col s4" src="images/mickey.png" alt="tuxedo cat">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -77,43 +79,42 @@
     <section id="work" class="work">
         <div class="row center-align">
             <h2>Work</h2>
-            <div class="container">
-                <div class="col l6 s12">
-                    <div class="card sticky-action large">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/work/browsergotchi.png" alt="browsergotchi screenshot">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator white-text">Browsergotchi<i class="fa fa-ellipsis-v right  grey-text text-darken-4" aria-hidden="true"></i></span>
-                            <p>Technologies: HTML5, CSS3, JavaScript, JQuery, GIMP</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="left" href="https://github.com/sdkevorkian/browsergotchi" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i> Github</a>
-                            <a class="right" href="https://sdkevorkian.github.io/browsergotchi/" target="_blank"><i class="fa fa-globe fa-2x" aria-hidden="true"></i> View</a>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title white-text">Browsergotchi<i class="fa fa-times right grey-text text-darken-4" aria-hidden="true"></i></span>
-                            <p>Based on the tamagotchis of the 1990s, Browsergotchi is a game where you feed a pet and gain experience points. The higher your experience points, the better food and accessories that you can unlock! Don't forget to pick up the poop!</p>
-                        </div>
+            <!-- <div class="container"> -->
+            <div class="col l4 offset-l2 s12">
+                <div class="card sticky-action large">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/work/browsergotchi.png" alt="browsergotchi screenshot">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator white-text">Browsergotchi<i class="fa fa-ellipsis-v right  grey-text text-darken-4" aria-hidden="true"></i></span>
+                        <p>Technologies: HTML5, CSS3, JavaScript, JQuery, GIMP</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="left" href="https://github.com/sdkevorkian/browsergotchi" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i> Github</a>
+                        <a class="right" href="https://sdkevorkian.github.io/browsergotchi/" target="_blank"><i class="fa fa-globe fa-2x" aria-hidden="true"></i> View</a>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title white-text">Browsergotchi<i class="fa fa-times right grey-text text-darken-4" aria-hidden="true"></i></span>
+                        <p>Based on the tamagotchis of the 1990s, Browsergotchi is a game where you feed a pet and gain experience points. The higher your experience points, the better food and accessories that you can unlock! Don't forget to pick up the poop!</p>
                     </div>
                 </div>
-                <div class="col l6 s12">
-                    <div class="card sticky-action large">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/work/find-happy.png" alt="find happy screenshot">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator white-text">Find Happy<i class="fa fa-ellipsis-v right  grey-text text-darken-4"></i></span>
-                            <p>Technologies: HTML5, CSS3, JavaScript, JQuery, Node.js, Express.js, Google Map + Geocode APIs, Yelp API, Sequelize, PostgreSQL</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="left" href="https://github.com/sdkevorkian/find-happy" target="_blank"><i class="fa fa-github fa-2x"></i> Github</a>
-                            <a class="right" href="http://find-happy.herokuapp.com/" target="_blank"><i class="fa fa-globe fa-2x"></i> View</a>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title white-text">Find Happy<i class="fa fa-times right grey-text text-darken-4"></i></span>
-                            <p>Find Happy is a combined address book and Yelp search app. Users can preload addresses and save fun locations around that area! Perfect for travel planning.</p>
-                        </div>
+            </div>
+            <div class="col l4 s12">
+                <div class="card sticky-action large">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/work/find-happy.png" alt="find happy screenshot">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator white-text">Find Happy<i class="fa fa-ellipsis-v right  grey-text text-darken-4"></i></span>
+                        <p>Technologies: HTML5, CSS3, JavaScript, JQuery, Node.js, Express.js, Google Map + Geocode APIs, Yelp API, Sequelize, PostgreSQL</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="left" href="https://github.com/sdkevorkian/find-happy" target="_blank"><i class="fa fa-github fa-2x"></i> Github</a>
+                        <a class="right" href="http://find-happy.herokuapp.com/" target="_blank"><i class="fa fa-globe fa-2x"></i> View</a>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title white-text">Find Happy<i class="fa fa-times right grey-text text-darken-4"></i></span>
+                        <p>Find Happy is a combined address book and Yelp search app. Users can preload addresses and save fun locations around that area! Perfect for travel planning.</p>
                     </div>
                 </div>
             </div>
