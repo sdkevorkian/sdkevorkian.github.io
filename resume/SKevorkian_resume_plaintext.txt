@@ -1,0 +1,86 @@
+﻿Sara Kevorkian
+
+sdkevorkian@gmail.com
+
+253-332-7341
+
+linkedin.com/in/sarakevorkian
+github.com/sdkevorkian
+
+Seattle, WA
+
+Summary
+I am an observant full stack developer that learns quickly by identifying patterns in new material. My experience in biotech has taught me the importance of flexibility and the mindset to break concepts down into testable pieces. I make every hour happy hour and bring a balance of fun and serious work ethic to any team.
+
+Technical Experience
+
+General Assembly
+Web Development Immersive
+Mar 2017 to  Current
+Accelerated project oriented learning - 70+ hours per week over 3 months.
+Practiced DRY coding and RESTful routing with CRUD operations.
+Worked individually and as a team to develop full-stack web applications.
+Kept a positive attitude while tackling challenging material.
+
+Hematologics Inc.
+Clinical Research Associate - Molecular Analysis / QC Lead
+Nov 2014 to Feb 2017
+Worked within an interdisciplinary team to coordinate clinical testing and prioritize STAT cases.
+Developed technical protocols and managed version control.
+Identified redundancies in the procedure manual and transferred the entire library of documents into Sharepoint.
+Troubleshot issues in both the existing production pipeline and new materials.
+
+Genelex Corporation
+Molecular Technologist II / Quality Assistant
+Sept 2011 to  Nov 2014
+Performed high throughput clinical DNA testing.
+Managed purchasing and quality control Access databases.
+Designed technical data organization and inventory tracking documents.
+Implemented CAP quality control standards into procedure manual.
+
+Skills
+
+Tools
+HTML
+CSS
+JavaScript
+JQuery
+Node.js
+Express.js
+Angular.js
+Sequelize
+MongoDB
+SQL
+Postgres
+NoSQL
+Bootstrap
+Materialize
+Git/Github
+Sublime Text 3
+Microsoft Office
+
+Abilities
+Troubleshooting
+Teamwork
+Communication
+Flexibility
+Positivity
+Organization
+Self-Reliance
+
+Education
+
+General Assembly
+Web Development Immersive
+2017
+
+Western Washington University
+B. S.  Cellular and Molecular Biology/Biochemistry
+2011
+
+Volunteering
+Domestic Violence and Sexual Assault Services of Whatcom County
+
+Victim Advocate
+November 2009 to  May 2011
+Communicated effectively and compassionately with individuals in high stress situations
