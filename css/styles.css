@@ -61,7 +61,7 @@ p {
     background-position: bottom;
     height: 100vh;
     width: 100%;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .name {
@@ -72,6 +72,24 @@ p {
 
 .role {
     margin: 0;
+}
+
+.links {
+    margin: 10em;
+}
+
+.links li {
+    display: inline;
+    margin: 1em;
+}
+
+.links li a {
+    color: #FFF;
+    transition: all 0.5s ease;
+}
+
+.links li a:hover {
+    color: #BC5478;
 }
 
 
@@ -93,6 +111,18 @@ nav ul li a:hover,
 nav a:hover,
 nav ul li.active {
     color: #927982;
+}
+
+.dropdown-content {
+    background-color: #755E6A;
+}
+
+.dropdown-content li>a {
+    color: #FFF;
+}
+
+.dropdown-content li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 
@@ -194,7 +224,6 @@ nav ul li.active {
 }
 
 .contact-box a {
-    margin: 0.2em;
     padding: 0.25em 0.5em;
     box-sizing: border-box;
     border-radius: 5%;
@@ -249,6 +278,13 @@ footer {
 @media (max-width: 770px) {
     body {
         font-size: 0.75em;
+    }
+    .links {
+        margin: 18em auto;
+    }
+    .links li {
+        margin: 0.5em;
+        font-size: 0.8em;
     }
     .card.large {
         max-height: 400px;

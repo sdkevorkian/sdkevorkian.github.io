@@ -25,6 +25,7 @@
           }
       });
 
+      //smooth scroll
       $(window).on("scroll", function() {
           var currentPos = $(window).scrollTop();
           $('nav li a').each(function() {
