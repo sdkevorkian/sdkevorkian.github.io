@@ -1,11 +1,13 @@
   $(document).ready(function() {
+      // pushpin nav
       $('#pin-this-nav').pushpin({
           // when you scroll past the offset of the nav from the top, then fix nav bar
           top: $('#pin-this-nav').offset().top
       });
 
-      $("a").on('click', function(event) {
 
+      // smooth scroll
+      $("a").on('click', function(event) {
           // Make sure this.hash has a value before overriding default behavior
           if (this.hash !== "") {
               // Prevent default anchor click behavior
@@ -21,5 +23,22 @@
                   window.location.hash = hash;
               });
           }
+      });
+
+      $(window).on("scroll", function() {
+          var currentPos = $(window).scrollTop();
+          $('nav li a').each(function() {
+              var sectionLink = $(this);
+              // capture the height of the navbar
+              var navHeight = $('nav').outerHeight() + 1;
+              var section = $(sectionLink.attr('href'));
+              // subtract the navbar height from the top of the section
+              if (section.position().top - navHeight <= currentPos && sectionLink.offset().top + section.height() > currentPos) {
+                  $('nav li').removeClass('active');
+                  sectionLink.parent().addClass('active');
+              } else {
+                  sectionLink.parent().removeClass('active');
+              }
+          });
       });
   });

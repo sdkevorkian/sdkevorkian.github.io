@@ -122,11 +122,11 @@ nav ul li.active {
 
 .group {
     font-size: 1.5em;
+    color: #BC5478;
 }
 
 .skills p {
     display: inline-block;
-    color: #BC5478;
 }
 
 
@@ -142,7 +142,7 @@ nav ul li.active {
 }
 
 .card {
-    margin: 0 1em;
+    margin: 1em;
 }
 
 .card,
@@ -244,4 +244,13 @@ footer {
     color: #FFF;
     background-color: #755E6A;
     height: 2em;
+}
+
+@media (max-width: 770px) {
+    body {
+        font-size: 0.75em;
+    }
+    .card.large {
+        max-height: 400px;
+    }
 }
