@@ -144,6 +144,10 @@ nav ul li.active {
     padding-top: 2em;
 }
 
+.pets img {
+    border-radius: 10%;
+}
+
 
 /*          SKILLS              */
 

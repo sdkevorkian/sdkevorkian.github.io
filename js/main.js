@@ -2,7 +2,7 @@
       // pushpin nav
       $('#pin-this-nav').pushpin({
           // when you scroll past the offset of the nav from the top, then fix nav bar
-          top: $('#pin-this-nav').offset().top
+          top: $('#pin-this-nav').offset().top + 20
       });
 
 
@@ -17,7 +17,7 @@
               // Using jQuery's animate() method to add smooth page scroll
               // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
               $('html, body').animate({
-                  scrollTop: $(hash).offset().top
+                  scrollTop: $(hash).offset().top - 30
               }, 1000, function() {
                   // Add hash (#) to URL when done scrolling (default click behavior)
                   window.location.hash = hash;
@@ -25,7 +25,7 @@
           }
       });
 
-      //smooth scroll
+      //active section lit up in navbar
       $(window).on("scroll", function() {
           var currentPos = $(window).scrollTop();
           $('nav li a').each(function() {
