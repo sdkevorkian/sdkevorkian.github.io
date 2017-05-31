@@ -49,16 +49,18 @@ JQuery
 Node.js
 Express.js
 Angular.js
-Sequelize
-MongoDB
+Ruby
 SQL
 Postgres
+Sequelize
+MongoDB
+Mongoose
 NoSQL
 Bootstrap
 Materialize
 Git/Github
 Sublime Text 3
-Microsoft Office
+
 
 Abilities
 Troubleshooting
