@@ -160,8 +160,8 @@ nav ul li.active {
     color: #BC5478;
 }
 
-.skills p {
-    display: inline-block;
+.skills li {
+    margin: 1.5em;
 }
 
 
