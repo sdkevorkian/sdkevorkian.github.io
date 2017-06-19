@@ -11,7 +11,7 @@ angular.module('WorkApp', [])
                     description: "Doggleganger allows you to search for the perfect pet based on your percentage look-alike match. This was a three-person group project, and I was primarily responsible for the image comparison features, Angular.js implementation, troubleshooting, and deployment."
                 }, {
                     name: "Chronotron",
-                    technologies: "HTML5, CSS3, JavaScript, JQuery, Ruby on Rails, Youtube API, Trails API, Spotify API, Open Trivia API, Open Weather API",
+                    technologies: "HTML5, CSS3, JavaScript, JQuery, Ruby on Rails, Youtube API, Trails API, Spotify API, Open Trivia API, Open Weather API, Google Analytics",
                     github: 'https://github.com/sdkevorkian/chronotron',
                     liveSite: 'https://chronotron.herokuapp.com/',
                     imgUrl: 'images/work/chronotron.png',
