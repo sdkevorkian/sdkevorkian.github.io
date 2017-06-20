@@ -226,6 +226,7 @@ nav ul li.active {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    margin: 1em auto;
 }
 
 .contact-box a {
@@ -242,6 +243,10 @@ a.icon {
 a.icon:hover {
     background-color: #BC5478;
     color: #FFF;
+}
+
+.codewars {
+    margin-top: 1em;
 }
 
 
