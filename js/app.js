@@ -3,9 +3,6 @@ angular.module('Portfolio', ['WorkApp'])
 
         $scope.projects = WorkFactory.getProjects();
 
-        $scope.animateElementIn = function($el) {
-            $el.removeClass('not-visible');
-            $el.addClass('fadeInLeftBig');
-        };
+
 
     }]);
