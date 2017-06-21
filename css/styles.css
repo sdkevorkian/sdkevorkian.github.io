@@ -51,10 +51,6 @@ p {
     margin-bottom: 0;
 }
 
-a {
-    transition: all 0.5s ease;
-}
-
 
 /*      HOME                */
 
@@ -89,6 +85,7 @@ a {
 
 .links li a {
     color: #FFF;
+    transition: all 0.5s ease;
 }
 
 .links li a:hover {
@@ -226,6 +223,7 @@ nav ul li.active {
 
 a.icon {
     color: #BC5478;
+    transition: all 0.5s ease;
 }
 
 a.icon:hover {
@@ -254,6 +252,7 @@ a.icon:hover {
 }
 
 .btn-large:hover {
+    transition: all 0.5s ease;
     background-color: #FFF;
     color: #BC5478;
 }
