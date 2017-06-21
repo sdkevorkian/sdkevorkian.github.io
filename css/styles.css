@@ -51,6 +51,10 @@ p {
     margin-bottom: 0;
 }
 
+a {
+    transition: all 0.5s ease;
+}
+
 
 /*      HOME                */
 
@@ -85,7 +89,6 @@ p {
 
 .links li a {
     color: #FFF;
-    transition: all 0.5s ease;
 }
 
 .links li a:hover {
@@ -172,46 +175,32 @@ nav ul li.active {
     color: #FFF;
 }
 
-.work img {
+.project {
+    border-radius: 5px;
+    background-color: #755E6A;
+    margin: 1em auto;
+}
+
+.project img {
     max-width: 100%;
+    border-radius: 5px;
 }
 
-.card {
-    margin: 1em;
+.project a {
+    color: #927982;
+    margin: 2em;
 }
 
-.card,
-.card img.activator,
-.card .card-reveal {
-    border-radius: 5% 5% 0 0;
-}
-
-.card .card-content p,
-.card p,
-.card .card-title {
-    color: #FFF;
-}
-
-.card .card-content {
-    padding: 12px 24px;
-}
-
-.card .card-action {
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    min-height: 3.75em;
-}
-
-.card,
-.card .card-reveal {
-    background-color: #927982;
-}
-
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-    color: #FFF;
-}
-
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+.project a:hover {
     color: #BC5478;
+}
+
+.project .row {
+    padding: 1em 0.5em;
+}
+
+.not-visible {
+    visibility: hidden;
 }
 
 
@@ -237,7 +226,6 @@ nav ul li.active {
 
 a.icon {
     color: #BC5478;
-    transition: all 0.5s ease;
 }
 
 a.icon:hover {
@@ -266,7 +254,6 @@ a.icon:hover {
 }
 
 .btn-large:hover {
-    transition: all 0.5s ease;
     background-color: #FFF;
     color: #BC5478;
 }
