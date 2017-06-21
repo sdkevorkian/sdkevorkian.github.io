@@ -199,6 +199,10 @@ nav ul li.active {
     padding: 1em 0.5em;
 }
 
+.not-visible {
+    visibility: hidden;
+}
+
 
 /*          CONTACT            */
 
