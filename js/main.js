@@ -5,7 +5,7 @@
       // pushpin nav
       $('#pin-this-nav').pushpin({
           // when you scroll past the offset of the nav from the top, then fix nav bar
-          top: $('#pin-this-nav').offset().top + 20
+          top: $('#pin-this-nav').offset().top
       });
 
 
@@ -31,20 +31,24 @@
       //active section lit up in navbar
       $(window).on("scroll", function() {
           var currentPos = $(window).scrollTop();
+
           $('nav li a').each(function() {
               var sectionLink = $(this);
               // capture the height of the navbar
-              var navHeight = $('nav').outerHeight() + 1;
+              var navHeight = $('.nav-wrapper').outerHeight() + 1;
               var section = $(sectionLink.attr('href'));
+
               // subtract the navbar height from the top of the section
               if (section.position().top - navHeight <= currentPos && sectionLink.offset().top + section.height() > currentPos) {
-                  $('nav li').removeClass('active');
                   sectionLink.parent().addClass('active');
+                  sectionLink.parent().siblings().removeClass('active');
               } else {
                   sectionLink.parent().removeClass('active');
               }
           });
       });
+
+
 
       // analytics
       (function(i, s, o, g, r, a, m) {
