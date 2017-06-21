@@ -51,6 +51,19 @@ p {
     margin-bottom: 0;
 }
 
+.btn-large,
+.btn-large:visited,
+.btn-large:focus {
+    /*width: 20%;*/
+    margin: 1em;
+    background-color: #BC5478;
+}
+
+.btn-large:hover {
+    background-color: #FFF;
+    color: #BC5478;
+}
+
 
 /*      HOME                */
 
@@ -241,20 +254,6 @@ a.icon:hover {
 .resume {
     background-color: #927982;
     color: #FFF;
-}
-
-.btn-large,
-.btn-large:visited,
-.btn-large:focus {
-    width: 20%;
-    margin: 1em;
-    background-color: #BC5478;
-}
-
-.btn-large:hover {
-    transition: all 0.5s ease;
-    background-color: #FFF;
-    color: #BC5478;
 }
 
 .resume i {
