@@ -72,12 +72,23 @@ Organization
 Self-Reliance
 
 PROJECTS
-Browsergotchi        Apr 2017 - Apr 2017
-Technologies used: HTML5, CSS3, JavaScript, JQuery, GIMP
-Based on the tamagotchis of the 1990s, Browsergotchi is a game where you feed a pet and gain experience points. The higher your experience points, the better food and accessories that you can unlock!
-Find Happy        May 2017 - May 2017
+
+Chronotron  Jun 2017
+Technologies: HTML5, CSS3, JavaScript, JQuery, Ruby on Rails, Youtube API, Trails API, Spotify API, Open Trivia API, Open Weather API, Google Analytics
+Give Chronotron an amount of time you need to spend and it will provide you enough content to fill that void. This project was created by a 5 person dev team working with 1 UX/UI Consultant. My responsibilities were the music section, the homepage and side navbar logic, deployment, troubleshooting, and implementing suggestions from the UX/UI consultant.
+
+Doggleganger  May 2017
+Technologies: HTML5, CSS3, JavaScript, Angular.js, Node.js, Express.js, MongoDB, JWT, Petfinder API, GraphicsMagick's npm module
+Doggleganger allows you to search for the perfect pet based on your percentage look-alike match. This was a three-person group project, and I was primarily responsible for the image comparison features and shared responsibility on Angular.js implementation.
+
+Find Happy        May 2017
 Technologies: HTML5, CSS3, JavaScript, JQuery, Node.js, Express.js, Google Map + Geocode APIs, Yelp API, Sequelize, PostgreSQL
 Find Happy is a combined address book and Yelp search app. Users can preload addresses and save fun locations around that area! Perfect for travel planning.
+
+Browsergotchi        Apr 2017
+Technologies used: HTML5, CSS3, JavaScript, JQuery, GIMP
+Based on the tamagotchis of the 1990s, Browsergotchi is a game where you feed a pet and gain experience points. The higher your experience points, the better food and accessories that you can unlock!
+
 
 
 
