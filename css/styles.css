@@ -54,7 +54,6 @@ p {
 .btn-large,
 .btn-large:visited,
 .btn-large:focus {
-    /*width: 20%;*/
     margin: 1em;
     background-color: #BC5478;
 }
@@ -214,6 +213,10 @@ nav ul li.active {
 
 .not-visible {
     visibility: hidden;
+}
+
+.project .btn-large {
+    margin: 0.5em;
 }
 
 
