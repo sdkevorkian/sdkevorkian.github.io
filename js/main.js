@@ -1,4 +1,7 @@
   $(document).ready(function() {
+
+      AOS.init();
+
       // pushpin nav
       $('#pin-this-nav').pushpin({
           // when you scroll past the offset of the nav from the top, then fix nav bar
