@@ -199,8 +199,7 @@ nav ul li.active {
 }
 
 .project a {
-    color: #927982;
-    margin: 2em;
+    color: white;
 }
 
 .project a:hover {

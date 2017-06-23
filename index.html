@@ -115,6 +115,9 @@
                         <div class="col m7 s12">
                             <p>Technologies: {{project.technologies}}</p>
                             <p>{{project.description}}</p>
+                            <p ng-if="project.contributors">
+                                Contributors: <span ng-repeat="contributor in project.contributors"><a ng-href="{{contributor.link}}" target="_blank">{{contributor.name}}</a><span ng-if="!$last">, </span></span>
+                            </p>
                         </div>
                         <div class="col s12">
                             <a ng-href="{{project.github}}" target="_blank">
