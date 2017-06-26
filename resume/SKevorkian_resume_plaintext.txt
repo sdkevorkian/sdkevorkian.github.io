@@ -19,7 +19,7 @@ Technical Experience
 General Assembly
 Web Development Immersive
 Mar 2017 to  Current
-Accelerated project oriented learning - 70+ hours per week over 3 months.
+Accelerated project oriented learning - 50+ hours per week over 3 months.
 Practiced DRY coding and RESTful routing with CRUD operations.
 Worked individually and as a team to develop full-stack web applications.
 Kept a positive attitude while tackling challenging material.
