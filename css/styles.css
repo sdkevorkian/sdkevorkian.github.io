@@ -64,6 +64,7 @@ p {
 }
 
 a {
+    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -227,14 +228,21 @@ nav ul li.active {
 
 .contact-box {
     font-size: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin: 1em auto;
 }
 
 .contact-box a {
     padding: 0.25em 0.5em;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 5%;
 }
@@ -276,7 +284,7 @@ footer {
 
 @media (max-width: 770px) {
     body {
-        font-size: 0.75em;
+        /*font-size: 0.8em;*/
     }
     .links {
         margin: 18em auto;
