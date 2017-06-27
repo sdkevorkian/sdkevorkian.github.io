@@ -220,6 +220,17 @@ nav ul li.active {
     font-size: 5em;
 }
 
+.devicons {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1em;
+    justify-content: flex-start;
+}
+
+.devicons i {
+    margin: 0.25em;
+}
+
 
 /*          RESUME              */
 
@@ -294,9 +305,6 @@ footer {
 }
 
 @media (max-width: 770px) {
-    body {
-        /*font-size: 0.8em;*/
-    }
     .links {
         margin: 18em auto;
     }
