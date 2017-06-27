@@ -143,49 +143,15 @@ nav ul li.active {
 }
 
 
-/*          ABOUT               */
-
-.about {
-    background-color: #927982;
-    color: #FFF;
-}
-
-.me {
-    max-width: 100%;
-    max-height: 50%;
-    border-radius: 5%;
-}
-
-.pets {
-    padding-top: 2em;
-}
-
-.pets img {
-    border-radius: 10%;
-}
-
-
-/*          SKILLS              */
-
-.skills {
-    background-color: #FFFFFF;
-}
-
-.group {
-    font-size: 1.5em;
-    color: #BC5478;
-}
-
-.skills li {
-    margin: 1.5em;
-}
-
-
 /*          WORK                  */
 
 .work {
     background-color: #BC5478;
     color: #FFF;
+}
+
+.work .container {
+    width: 85%;
 }
 
 .project {
@@ -217,6 +183,74 @@ nav ul li.active {
 
 .project .btn-large {
     margin: 0.5em;
+}
+
+
+/*          ABOUT               */
+
+.about {
+    background-color: #927982;
+    color: #FFF;
+}
+
+.me {
+    max-width: 100%;
+    max-height: 50%;
+    border-radius: 5%;
+}
+
+
+/*          SKILLS              */
+
+.skills {
+    background-color: #FFFFFF;
+}
+
+.group {
+    font-size: 1.5em;
+    color: #000;
+}
+
+.skills li {
+    margin: 1.5em;
+    color: #BC5478;
+}
+
+.skills i {
+    font-size: 5em;
+}
+
+.devicons {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1em;
+    justify-content: flex-start;
+}
+
+.devicons i {
+    margin: 0.25em;
+}
+
+
+/*          RESUME              */
+
+.resume {
+    background-color: #BC5478;
+    color: #FFF;
+}
+
+.resume i {
+    margin: 0.5em;
+}
+
+.resume .btn-large {
+    color: #FFF;
+    background-color: #755E6A;
+}
+
+.resume .btn-large:hover {
+    color: #BC5478;
+    background-color: #FFF;
 }
 
 
@@ -261,18 +295,6 @@ a.icon:hover {
 }
 
 
-/*          RESUME              */
-
-.resume {
-    background-color: #927982;
-    color: #FFF;
-}
-
-.resume i {
-    margin: 0.5em;
-}
-
-
 /*          FOOTER              */
 
 footer {
@@ -283,9 +305,6 @@ footer {
 }
 
 @media (max-width: 770px) {
-    body {
-        /*font-size: 0.8em;*/
-    }
     .links {
         margin: 18em auto;
     }
