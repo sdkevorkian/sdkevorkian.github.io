@@ -308,7 +308,7 @@ footer {
 
 @media (max-width: 770px) {
     .links {
-        margin: 18em auto;
+        margin: 8em auto;
     }
     .links li {
         margin: 0.5em;
