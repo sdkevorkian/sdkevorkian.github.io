@@ -307,16 +307,6 @@ footer {
 }
 
 @media (max-width: 770px) {
-    .links {
-        margin: 8em auto;
-    }
-    .links li {
-        margin: 0.5em;
-        font-size: 0.8em;
-    }
-}
-
-@media (max-width: 560px){
     h1 {
         font-size: 5em;
     }
@@ -324,6 +314,10 @@ footer {
         font-size: 3em;
     }
     .links {
-        margin: 5em auto;
+        margin: 8em auto;
+    }
+    .links li {
+        margin: 0.5em;
+        font-size: 0.8em;
     }
 }
