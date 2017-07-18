@@ -315,3 +315,15 @@ footer {
         font-size: 0.8em;
     }
 }
+
+@media (max-width: 560px){
+    h1 {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+    .links {
+        margin: 5em auto;
+    }
+}
