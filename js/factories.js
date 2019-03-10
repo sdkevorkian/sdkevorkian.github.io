@@ -8,7 +8,7 @@ angular.module('WorkApp', [])
                     technologies: "HTML5, CSS3, React, Node.js, Express.js, Web APIs",
                     github: 'https://github.com/sdkevorkian/songmoji',
                     liveSite: 'http://songmoji.herokuapp.com/',
-                    imgUrl: 'images/work/songmoji.png',
+                    imgUrl: 'images/work/songmoji.PNG',
                     description: 'Got a song stuck in your head? Search for it on songmoji and see the lyrics translated into emojis!'
                 },{
                     name: "Chronotron",
