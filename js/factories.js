@@ -3,15 +3,14 @@ angular.module('WorkApp', [])
         return {
             getProjects: function() {
                 var contributors = [{ name: "Alaina Buzas", link: "http://www.alainabuzas.com" }, { name: "Andrew Tsujimoto", link: "http://www.andrewtsujimoto.com" }, { name: "Mark Goldstein", link: "http://markdgold.github.io" }, { name: "Peter Amadon" }, { name: "Ben Frates (UX/UI)", link: "https://www.benfrates.com/" }];
-                return [{
-                    name: "Doggleganger",
-                    technologies: "HTML5, CSS3, JavaScript, Angular.js, Node.js, Express.js, MongoDB, JWT, Petfinder API, GraphicsMagick\'s npm module",
-                    github: 'https://github.com/sdkevorkian/project-3',
-                    liveSite: 'https://doggleganger.herokuapp.com/',
-                    imgUrl: 'images/work/doggleganger.png',
-                    description: "Doggleganger allows you to search for the perfect pet based on your percentage look-alike match. This was a three-person group project, and I was primarily responsible for the image comparison features, Angular.js implementation, troubleshooting, and deployment.",
-                    contributors: [contributors[0], contributors[1]]
-                }, {
+                return [ {
+                    name: "Songmoji",
+                    technologies: "HTML5, CSS3, React, Node.js, Express.js, Web APIs",
+                    github: 'https://github.com/sdkevorkian/songmoji',
+                    liveSite: 'http://songmoji.herokuapp.com/',
+                    imgUrl: 'images/work/songmoji.png',
+                    description: 'Got a song stuck in your head? Search for it on songmoji and see the lyrics translated into emojis!'
+                },{
                     name: "Chronotron",
                     technologies: "HTML5, CSS3, JavaScript, JQuery, Ruby on Rails, Youtube API, Trails API, Spotify API, Open Trivia API, Open Weather API, Google Analytics",
                     github: 'https://github.com/sdkevorkian/chronotron',
@@ -21,6 +20,14 @@ angular.module('WorkApp', [])
                     contributors: [contributors[0], contributors[1], contributors[2], contributors[3], contributors[4], ]
 
                 }, {
+                    name: "Doggleganger",
+                    technologies: "HTML5, CSS3, JavaScript, Angular.js, Node.js, Express.js, MongoDB, JWT, Petfinder API, GraphicsMagick\'s npm module",
+                    github: 'https://github.com/sdkevorkian/project-3',
+                    liveSite: 'https://doggleganger.herokuapp.com/',
+                    imgUrl: 'images/work/doggleganger.png',
+                    description: "Doggleganger allows you to search for the perfect pet based on your percentage look-alike match. This was a three-person group project, and I was primarily responsible for the image comparison features, Angular.js implementation, troubleshooting, and deployment.",
+                    contributors: [contributors[0], contributors[1]]
+                },{
                     name: "Browsergotchi",
                     technologies: "HTML5, CSS3, JavaScript, JQuery, GIMP",
                     github: 'https://github.com/sdkevorkian/browsergotchi',
