@@ -9,7 +9,7 @@ angular.module('WorkApp', [])
                     github: 'https://github.com/sdkevorkian/songmoji',
                     liveSite: 'http://songmoji.herokuapp.com/',
                     imgUrl: 'images/work/songmoji.PNG',
-                    description: 'Got a song stuck in your head? Search for it on songmoji and see the lyrics translated into emojis!'
+                    description: 'Got a song stuck in your head? Search for it on songmoji and see the lyrics translated into emojis! Built as an exploration project as I was teaching myself React.'
                 },{
                     name: "Chronotron",
                     technologies: "HTML5, CSS3, JavaScript, JQuery, Ruby on Rails, Youtube API, Trails API, Spotify API, Open Trivia API, Open Weather API, Google Analytics",
