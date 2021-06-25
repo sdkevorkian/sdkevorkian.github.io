@@ -1,3 +1,5 @@
+@import './_vars.scss';
+
 .heading2Xl {
     font-size: 2.5rem;
     line-height: 1.2;
@@ -50,3 +52,51 @@
   .lightText {
     color: #666;
   }
+
+.animate {
+  transition: all 0.3s;
+}
+
+.link {
+  display: inline-block;
+  line-height: 36px;
+  margin: 8px;
+  padding: 4px 2%;
+  font-size: 16px;
+  position: relative;
+  opacity: .999;
+  @extend .animate;
+  background-color: transparent;
+  text-decoration: none;
+  color: $blue;
+
+  &:after {
+    content: '';
+    border-style: solid;
+    position: absolute;
+    z-index: 5;
+    box-sizing: content-box;
+    border: 1px solid $blue;
+    @extend .animate;
+  }
+
+  &:after {
+    width: 100%;
+    height: 0;
+    border-width: 0 0 1px 0;
+    bottom: 0;
+    right: -1px;
+  }
+  
+  &:hover, &:focus {
+    outline: none;
+    text-decoration: none;
+    border: 0;
+    
+    &:after {
+      width: 50%;
+      height: 50%;
+      border-right-width: 1px;
+    }
+  }
+}

@@ -11,9 +11,8 @@ export default function Home() {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          
-          <Link href="/work/first-work">
-            <a>Check my work!</a>
+          <Link href="/work/first-work" >
+            <a className={utilStyles.link}>Check my work!</a>
           </Link>
         </p>
       </section>
