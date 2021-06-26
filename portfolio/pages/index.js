@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Date from '../components/date/date'
 import Layout, { siteTitle } from '../components/layout/layout'
 import utilStyles from '../styles/utils.module.scss'
 import { getSortedPostsData } from '../lib/posts'
@@ -33,11 +34,13 @@ I grew up near Seattle and enjoy living in the PNW. I am a Seattle-based front e
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              {title}
+              <Link href={`/posts/${id}`}>
+                <a>{title}</a>
+              </Link>
               <br />
-              {id}
-              <br />
-              {date}
+              <small className={utilStyles.lightText}>
+                <Date dateString={date} />
+              </small>
             </li>
           ))}
         </ul>
