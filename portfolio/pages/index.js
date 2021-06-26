@@ -34,7 +34,7 @@ I grew up near Seattle and enjoy living in the PNW. I am a Seattle-based front e
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
+              <Link href={`/work/${id}`}>
                 <a>{title}</a>
               </Link>
               <br />
