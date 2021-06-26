@@ -27,10 +27,10 @@ export default function Work({ postData }) {
         <Head>
             <title>{postData.title}</title>
         </Head>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+        <h1>{postData.title}</h1>
 
         <br />
-        <div className={utilStyles.lightText}>
+        <div>
             <Date dateString={postData.date} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }}></div>

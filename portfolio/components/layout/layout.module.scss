@@ -1,13 +1,12 @@
+@import '../../styles/vars';
+
 .container {
   max-width: 36rem;
   padding: 0 1rem;
   margin: 3rem auto 6rem;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @media (min-width: $min-lg){
+    max-width: 64rem;
+  }
 }
 
 .backToHome {

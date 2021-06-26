@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Date from '../components/date/date'
+import Image from 'next/image'
+//import Date from '../components/date/date'
 import Layout, { siteTitle } from '../components/layout/layout'
 import utilStyles from '../styles/utils.module.scss'
 import { getSortedPostsData } from '../lib/posts'
@@ -20,16 +21,26 @@ export default function Home({allPostsData}) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
+        <Image
+          priority
+          src="/images/self.jpg"
+          className={utilStyles.borderCircle}
+          height={108}
+          width={108}
+          alt='Sara Kevorkian'
+        />
+        <h1>Sara Kevorkian</h1>
+        <h2>Web Developer  Seattle, WA</h2>
         <p>Hi, I'm Sara!
 
-I grew up near Seattle and enjoy living in the PNW. I am a Seattle-based front end developer that has delivered for a variety of industries including airlines and real estate. I am primarily a front end developer with some back end development experience. My background in biotech taught me the importance of flexibility and the mindset to break concepts down into testable pieces. I am an analytical thinker and love to ask questions, while keeping a collaborative, positive mindset. In my 2+ years of experience I have learned new technologies quickly to meet project needs.</p>
+        I grew up near Seattle and enjoy living in the PNW. I am a Seattle-based front end developer that has delivered for a variety of industries including airlines and real estate. I am primarily a front end developer with some back end development experience. My background in biotech taught me the importance of flexibility and the mindset to break concepts down into testable pieces. I am an analytical thinker and love to ask questions, while keeping a collaborative, positive mindset. In my 2+ years of experience I have learned new technologies quickly to meet project needs.</p>
         <p>
-          <Link href="/work/first-work" >
-            <a className={utilStyles.link}>Check my work!</a>
+          <Link href="/work" >
+            <a className={utilStyles.btn}>Check my work!</a>
           </Link>
         </p>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
@@ -44,7 +55,7 @@ I grew up near Seattle and enjoy living in the PNW. I am a Seattle-based front e
             </li>
           ))}
         </ul>
-      </section>
+      </section> */}
     </Layout>
   )
 }
