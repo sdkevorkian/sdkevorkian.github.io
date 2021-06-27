@@ -1,11 +1,18 @@
 @import '../../styles/vars';
 
 .container {
-  max-width: 36rem;
+  max-width: 800px;
   padding: 0 1rem;
-  margin: 3rem auto 6rem;
-  @media (min-width: $min-lg){
-    max-width: 64rem;
+  position: relative;
+  margin: 1rem auto 3rem;
+  @media (min-width: $min-md){    
+    margin: 3rem auto 6rem;
+    max-width: 1280px;
+    padding-left: 5%;
+    padding-right: 128px;
+    @media(min-width: $min-xl){
+      padding-left: 1rem;
+    }
   }
 }
 
