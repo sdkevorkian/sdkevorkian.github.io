@@ -1,0 +1,11 @@
+@import '../../styles/vars';
+
+.about {
+    text-align: center;
+    p {
+        text-align: left;
+    }
+    @media(min-width: $min-md){
+        text-align: left;
+    }
+}

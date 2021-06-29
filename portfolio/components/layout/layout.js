@@ -1,9 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
 import Navigation from './navigation'
 import styles from './layout.module.scss'
-import utilStyles from '../../styles/utils.module.scss'
 
 const name = 'Sara Kevorkian'
 export const siteTitle = 'Sara Kevorkian\'s Portfolio'
