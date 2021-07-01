@@ -1,14 +1,16 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout/layout'
 import About from '../components/about/about'
-import utilStyles from '../styles/utils.module.scss'
 import { getSortedPostsData } from '../lib/posts'
+import { getAbout } from '../lib/CMS'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
+  const about = await getAbout()
+  console.log(about)
   return {
     props: {
-      allPostsData
+      about
     }
   }
 }
