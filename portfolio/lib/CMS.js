@@ -8,6 +8,5 @@ const client = createClient({
 
 export async function getAbout(){
     const aboutContent = await client.getEntry({id:'6BrzPY5KVK2zM8oEuKBtnT'})
-    //console.log(aboutContent)
     return aboutContent.fields;
 }
