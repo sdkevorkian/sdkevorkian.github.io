@@ -1,9 +1,19 @@
 import Head from 'next/head'
 import Layout from '../components/layout/layout'
+import { getNav } from '../lib/CMS'
 
-export default function WorkPage(){
+export async function getStaticProps() {
+    const nav = await getNav()
+    return {
+        props: {
+        nav
+        }
+    }
+}
+
+export default function WorkPage({nav}){
     return (
-        <Layout>
+        <Layout nav={nav}>
             <Head>
                 <title>Sara Kevorkian's work</title>
             </Head>

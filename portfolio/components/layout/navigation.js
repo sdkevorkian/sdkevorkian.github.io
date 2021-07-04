@@ -1,24 +1,23 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import styles from './navigation.module.scss'
 
-export default function Navigation(){
+export default function Navigation({nav}){
+    const { asPath } = useRouter()
     return (
-        <nav className={styles.nav}>
-            <Link href="/">
-                <a>Sara Kevorkian</a>
-            </Link>
-            <Link href="/work">
-                <a>Work</a>
-            </Link>
-            <Link href="/resume">
-                <a>Resume</a>
-            </Link>
-            <Link href="/contact">
-                <a>Contact</a>
-            </Link>
-            <Link href="/skills">
-                <a>Skills</a>
-            </Link>
-        </nav>
+        <>
+        {nav && <nav className={styles.nav}>
+            {nav.fields.links.map(link=>{
+                
+                return (
+                <Link href={link.fields.linkUrl} key={'link-'+link.sys.id}>
+                    <a className={asPath === link.fields.linkUrl ? styles.active : ""}>
+                        {link.fields.linkText}
+                    </a>
+                </Link>
+                )
+            })}
+        </nav> }
+        </>
     )
 }

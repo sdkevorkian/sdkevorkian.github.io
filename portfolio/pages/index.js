@@ -1,19 +1,21 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout/layout'
 import About from '../components/about/about'
-import { getAbout } from '../lib/CMS'
+import { getAbout, getNav } from '../lib/CMS'
 
 export async function getStaticProps() {
   const about = await getAbout()
+  const nav = await getNav()
   return {
     props: {
-      about
+      about,
+      nav
     }
   }
 }
-export default function Home({about}) {
+export default function Home({about, nav}) {
   return (
-    <Layout home>
+    <Layout home nav={nav}>
       <Head>
         <title>{siteTitle}</title>
       </Head>

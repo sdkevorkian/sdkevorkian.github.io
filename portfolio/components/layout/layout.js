@@ -6,7 +6,7 @@ import styles from './layout.module.scss'
 const name = 'Sara Kevorkian'
 export const siteTitle = 'Sara Kevorkian\'s Portfolio'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, nav }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -23,7 +23,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        <Navigation/>
+        <Navigation nav={nav}/>
       </header>
       <main>{children}</main>
       <footer className={styles.footer}>
