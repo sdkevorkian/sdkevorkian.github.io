@@ -15,3 +15,11 @@ export async function getNav(){
   const nav = await client.getEntry('pqbWfmG9v6w0H96Xx8aOM')
   return nav;
 }
+
+export async function getWorks(){
+  const works = await client.getEntries({
+    content_type: "workItem",
+    include: 3
+  })
+  return works;
+}

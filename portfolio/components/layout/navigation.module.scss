@@ -8,8 +8,13 @@
     a {
         margin-bottom: 6px;
         transition: all 0.5s;
-        &.active, &:hover {
+        &:first-child {
             font-size: 32px;
+        }
+        &.active {
+            &:not(:first-child) {
+                text-decoration: underline;
+            }
         }
         &:first-child{
             width: 100%;
@@ -21,7 +26,12 @@
         top: 0;
         right: 5%;
         flex-flow: column;
-        align-items: flex-end;        
+        align-items: flex-end;
+        a {
+            &.active {
+                font-size: 32px;
+            }
+        }        
     }
     @media(min-width: $min-xl){
         right: 0;

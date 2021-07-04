@@ -1,17 +1,20 @@
 import Head from 'next/head'
 import Layout from '../components/layout/layout'
-import { getNav } from '../lib/CMS'
+import { getNav, getWorks } from '../lib/CMS'
 
 export async function getStaticProps() {
     const nav = await getNav()
+    const works = await getWorks()
     return {
         props: {
-        nav
+            nav,
+            works
         }
     }
 }
 
-export default function WorkPage({nav}){
+export default function WorkPage({nav, works}){
+    console.log(works)
     return (
         <Layout nav={nav}>
             <Head>
