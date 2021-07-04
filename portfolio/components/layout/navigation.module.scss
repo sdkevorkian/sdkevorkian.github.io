@@ -4,10 +4,13 @@
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
-    font-size: 22px;
-    a:first-child{
-        width: 100%;
-        text-align: center;
+    font-size: 24px;
+    a {
+        margin-bottom: 6px;
+        &:first-child{
+            width: 100%;
+            text-align: center;
+        }
     }
     @media(min-width: $min-md){
         position: absolute;
