@@ -14,14 +14,21 @@ export async function getStaticProps() {
 }
 
 export default function WorkPage({nav, works}){
-    console.log(works)
     return (
         <Layout nav={nav}>
             <Head>
-                <title>Sara Kevorkian's work</title>
+                <title>Work | Sara Kevorkian</title>
             </Head>
             <section>
                 <h1>Work</h1>
+                {works.items.map(work=>{
+                    console.log(work)
+                    return (
+                        <div key={work.sys.id}>
+                            {work.fields.name}
+                        </div>
+                    )
+                })}
             </section>
         </Layout>
     )

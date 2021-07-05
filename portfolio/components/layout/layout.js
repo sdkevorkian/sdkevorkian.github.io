@@ -4,7 +4,7 @@ import Navigation from './navigation'
 import styles from './layout.module.scss'
 
 const name = 'Sara Kevorkian'
-export const siteTitle = 'Sara Kevorkian\'s Portfolio'
+export const siteTitle = 'Sara Kevorkian'
 
 export default function Layout({ children, home, nav }) {
   return (

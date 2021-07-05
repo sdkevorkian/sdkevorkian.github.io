@@ -19,7 +19,8 @@ export async function getNav(){
 export async function getWorks(){
   const works = await client.getEntries({
     content_type: "workItem",
-    include: 3
+    include: 3,
+    order:'-fields.lastUpdated'
   })
   return works;
 }
