@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Layout from '../components/layout/layout'
+import WorkItem from '../components/workItem/workitem'
 import { getNav, getWorks } from '../lib/CMS'
+import gridStyles from '../styles/grid.module.scss'
 
 export async function getStaticProps() {
     const nav = await getNav()
@@ -21,14 +23,15 @@ export default function WorkPage({nav, works}){
             </Head>
             <section>
                 <h1>Work</h1>
+                <div className={gridStyles.grid}>
+
                 {works.items.map(work=>{
                     console.log(work)
                     return (
-                        <div key={work.sys.id}>
-                            {work.fields.name}
-                        </div>
-                    )
-                })}
+                        <WorkItem work={work.fields} key={work.sys.id}/>
+                        )
+                    })}
+                </div>
             </section>
         </Layout>
     )
