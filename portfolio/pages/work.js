@@ -26,7 +26,6 @@ export default function WorkPage({nav, works}){
                 <div className={gridStyles.grid}>
 
                 {works.items.map(work=>{
-                    console.log(work)
                     return (
                         <WorkItem work={work.fields} key={work.sys.id}/>
                         )
