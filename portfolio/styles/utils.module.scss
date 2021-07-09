@@ -26,6 +26,7 @@
     transition: all 0.3s;
   }
   
+
   .btn {
     display: inline-block;
     line-height: 36px;
@@ -69,4 +70,8 @@
         border-right-width: 2px;
       }
     }
+  }
+
+  .largeSpacer {
+    margin-top: 40px;
   }

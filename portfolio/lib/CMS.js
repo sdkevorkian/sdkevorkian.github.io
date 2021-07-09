@@ -24,3 +24,8 @@ export async function getWorks(){
   })
   return works;
 }
+
+export async function getById(id){
+  const item = await client.getEntry(id);
+  return item.fields
+}

@@ -11,7 +11,7 @@ export default function Navigation({nav}){
                 
                 return (
                 <Link href={link.fields.linkUrl} key={'link-'+link.sys.id}>
-                    <a className={asPath === link.fields.linkUrl ? styles.active : ""}>
+                    <a className={asPath.includes(link.fields.linkUrl) ? styles.active : ""}>
                         {link.fields.linkText}
                     </a>
                 </Link>

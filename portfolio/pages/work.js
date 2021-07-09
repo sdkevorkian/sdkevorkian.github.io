@@ -27,7 +27,7 @@ export default function WorkPage({nav, works}){
 
                 {works.items.map(work=>{
                     return (
-                        <WorkItem work={work.fields} key={work.sys.id}/>
+                        <WorkItem work={work.fields} key={work.sys.id} id={work.sys.id}/>
                         )
                     })}
                 </div>
