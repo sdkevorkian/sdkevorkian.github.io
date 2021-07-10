@@ -3,29 +3,16 @@
   .borderCircle {
     border-radius: 50%;
   }
-  
-  .colorInherit {
-    color: inherit;
-  }
-  
-  .padding1px {
-    padding-top: 1px;
-  }
-  
-  .list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .listItem {
-    margin: 0 0 1.25rem;
-  }
 
   .animate {
     transition: all 0.3s;
   }
   
+  .grid {
+    margin-top: 120px;
+    display: flex;
+    flex-flow: row wrap;
+  }
 
   .btn {
     display: inline-block;
@@ -69,12 +56,5 @@
         height: 50%;
         border-right-width: 2px;
       }
-    }
-  }
-
-  .largeSpacer {
-    margin-top: 40px;
-    @media(min-width: $min-md){
-      margin-top: 120px;
     }
   }

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Layout from '../components/layout/layout'
 import WorkItem from '../components/workItem/workitem'
 import { getNav, getWorks } from '../lib/CMS'
-import gridStyles from '../styles/grid.module.scss'
+import utilStyles from '../styles/utils.module.scss'
 
 export async function getStaticProps() {
     const nav = await getNav()
@@ -24,7 +24,7 @@ export default function WorkPage({nav, works}){
             <section>
                 <h1>Work</h1>
                 {/* todo: add blurb and some avanade projects */}
-                <div className={gridStyles.grid}>
+                <div className={utilStyles.grid}>
 
                 {works.items.map(work=>{
                     return (
