@@ -45,7 +45,7 @@ export default function Work({ workItem, nav }) {
           <p><b>Last updated:</b> <Date dateString={workItem.lastUpdated} /></p>
           <div className={workStyles.btnContainer}>
             {workItem.liveSite && <a className={utilStyles.btn} href={workItem.liveSite} target="_blank">Live Site</a>}
-            <a className={utilStyles.btn} href={workItem.githubUrl} target="_blank">GitHub</a>
+            {workItem.githubUrl && <a className={utilStyles.btn} href={workItem.githubUrl} target="_blank">GitHub</a>}
           </div>
           {documentToReactComponents(workItem.description)}
           {workItem.contributors && <>
