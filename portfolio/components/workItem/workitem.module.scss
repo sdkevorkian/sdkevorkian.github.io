@@ -22,7 +22,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            background: linear-gradient(to top, rgba(black, 0.75) 40%, rgba($brown, 0.85));
+            background: linear-gradient(to top, rgba(black, 0.65) 40%, rgba($brown, 0.65));
         }
     }
     h2 {
@@ -33,9 +33,9 @@
         width: 50%;
         height: 400px;
     }
-    &:hover, &:active{
-        a:before {
-            background: linear-gradient(to top, rgba(black, 0.75) 40%, rgba(white, 0.25));
+    &:hover a, a:focus{
+        &:before {
+            background: linear-gradient(to top, rgba(black, 0.65) 40%, rgba(white, 0.25));
         }
     }
 }

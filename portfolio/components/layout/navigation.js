@@ -7,7 +7,7 @@ export default function Navigation({nav}){
     return (
         <>
         {nav && <nav className={styles.nav}>
-            {nav.fields.links.map(link=>{
+            {nav.links.map(link=>{
                 
                 return (
                 <Link href={link.fields.linkUrl} key={'link-'+link.sys.id}>

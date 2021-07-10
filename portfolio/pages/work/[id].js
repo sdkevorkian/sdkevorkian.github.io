@@ -35,7 +35,7 @@ export default function Work({ workItem, nav }) {
         <Head>
             <title>{workItem.name} | Sara Kevorkian</title>
         </Head>
-        <div className={workStyles.workPage}>
+        <section className={workStyles.workPage}>
           <h1>{workItem.name}</h1>
 
           <img className={utilStyles.largeSpacer}
@@ -59,7 +59,7 @@ export default function Work({ workItem, nav }) {
           <Link href="/work" >
             <a className={utilStyles.btn}>← Back to all work</a>
           </Link>
-        </div>
+        </section>
     </Layout>
   )
 }

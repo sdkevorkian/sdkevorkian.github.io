@@ -1,4 +1,5 @@
 import { createClient } from 'contentful';
+import { contentIDs } from '../constants/contentIDs';
 
 const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID, 
@@ -7,12 +8,17 @@ const client = createClient({
 
 
 export async function getAbout(){
-    const aboutContent = await client.getEntry('6BrzPY5KVK2zM8oEuKBtnT')
-    return aboutContent.fields;
+    const aboutContent = await getById(contentIDs.ABOUT_ID)
+    return aboutContent;
 }
 
 export async function getNav(){
-  const nav = await client.getEntry('pqbWfmG9v6w0H96Xx8aOM')
+  const nav = await getById(contentIDs.NAV_ID)
+  return nav;
+}
+
+export async function getResume(){
+  const nav = await getById(contentIDs.RESUME_ID)
   return nav;
 }
 
