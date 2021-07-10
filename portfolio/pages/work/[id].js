@@ -38,16 +38,15 @@ export default function Work({ workItem, nav }) {
         <section className={workStyles.workPage}>
           <h1>{workItem.name}</h1>
 
-          <img className={utilStyles.largeSpacer}
-            src={'https:' + workItem.image.fields.file.url}
-            alt={workItem.image.fields.description}/>
-          
+          <div className={workStyles.description}>{documentToReactComponents(workItem.description)}</div>
           <p><b>Last updated:</b> <Date dateString={workItem.lastUpdated} /></p>
           <div className={workStyles.btnContainer}>
             {workItem.liveSite && <a className={utilStyles.btn} href={workItem.liveSite} target="_blank">Live Site</a>}
             {workItem.githubUrl && <a className={utilStyles.btn} href={workItem.githubUrl} target="_blank">GitHub</a>}
           </div>
-          {documentToReactComponents(workItem.description)}
+          <img src={'https:' + workItem.image.fields.file.url}
+            alt={workItem.image.fields.description}/>
+          
           {workItem.contributors && <>
           <p><b>Contributors: </b></p>
           { workItem.contributors.map(person=>{

@@ -3,17 +3,29 @@
 .workPage {
     img {
         max-height: 600px;
-        margin-bottom: 2rem;
+        margin: 1rem 0 2rem;
         @media (min-width: $min-md) and (max-width: $min-lg){
             max-height: 400px;
         }
     }
 }
+
+.description {
+    max-width: 550px;
+    p {
+        text-align: justify;
+    }
+    @media(min-width: $min-lg){
+        max-width: 750px;
+    }
+}
+
 .btnContainer {
     a {
         margin-right: 2rem;
     }
 }
+
 .contributor {
     a:not([href]) {
         text-decoration: none;
