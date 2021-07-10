@@ -3,7 +3,7 @@ import Layout from '../components/layout/layout'
 import Resume from '../components/resume/resume'
 import { getNav, getResume } from '../lib/CMS'
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps() {
     const nav = await getNav()
     const resume = await getResume();
     return {
@@ -23,6 +23,7 @@ export default function Contact({nav, resume}){
             </Head>
             <section>
                 <h1>Contact</h1>
+                {/* todo: add contact stuff */}
             </section>
             <Resume resume={resume}/>
         </Layout>

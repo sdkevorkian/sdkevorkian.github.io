@@ -5,9 +5,9 @@ export default function Resume(props){
     let resume = props.resume;
     return (<div>
         <h2>Resume</h2>
+            {/* //todo: add icons and blurb */}
         {documentToReactComponents(resume.text)}
         <div>
-            
             <a href={resume.pdfResume.fields.file.url} download>Download PDF</a>
             <a href={resume.pdfResume.fields.file.url} target="_blank">View PDF</a>
         </div>

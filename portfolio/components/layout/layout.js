@@ -6,6 +6,8 @@ import styles from './layout.module.scss'
 const name = 'Sara Kevorkian'
 export const siteTitle = 'Sara Kevorkian'
 
+//Todo: add analytics and GDPR cookie stuff
+
 export default function Layout({ children, home, nav }) {
   return (
     <div className={styles.container}>

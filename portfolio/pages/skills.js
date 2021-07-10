@@ -1,9 +1,20 @@
 import Head from 'next/head'
 import Layout from '../components/layout/layout'
+import { getNav } from '../lib/CMS'
 
-export default function Skills(){
+export async function getStaticProps() {
+    const nav = await getNav()
+    return {
+        props: {
+            nav
+        }
+    }
+}
+
+
+export default function Skills({nav}){
     return (
-        <Layout>
+        <Layout nav={nav}>
             <Head>
                 <title>Sara Kevorkian's skills</title>
             </Head>
