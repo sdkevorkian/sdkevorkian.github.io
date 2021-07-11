@@ -41,8 +41,8 @@ export default function Work({ workItem, nav }) {
           <div className={workStyles.description}>{documentToReactComponents(workItem.description)}</div>
           <p><b>Last updated:</b> <Date dateString={workItem.lastUpdated} /></p>
           <div className={workStyles.btnContainer}>
-            {workItem.liveSite && <a className={utilStyles.btn} href={workItem.liveSite} target="_blank">Live Site</a>}
-            {workItem.githubUrl && <a className={utilStyles.btn} href={workItem.githubUrl} target="_blank">GitHub</a>}
+            {workItem.liveSite && <a className={utilStyles.externalBtn} href={workItem.liveSite} target="_blank">Live Site</a>}
+            {workItem.githubUrl && <a className={utilStyles.externalBtn} href={workItem.githubUrl} target="_blank">GitHub</a>}
           </div>
           <img src={'https:' + workItem.image.fields.file.url}
             alt={workItem.image.fields.description}/>

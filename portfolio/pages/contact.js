@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout from '../components/layout/layout'
 import Resume from '../components/resume/resume'
+import ContactSection from '../components/contactSection/contactSection'
 import { getNav, getResume } from '../lib/CMS'
 
 export async function getStaticProps() {
@@ -21,10 +22,7 @@ export default function Contact({nav, resume}){
             <Head>
                 <title>Contact Sara Kevorkian</title>
             </Head>
-            <section>
-                <h1>Contact</h1>
-                {/* todo: add contact stuff */}
-            </section>
+            <ContactSection />
             <Resume resume={resume}/>
         </Layout>
     )

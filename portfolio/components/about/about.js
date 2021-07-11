@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import utilStyles from '../../styles/utils.module.scss'
 import aboutStyles from './about.module.scss'
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 export default function About(props){
     let about = props.about;
@@ -17,7 +17,7 @@ export default function About(props){
                 alt={about.image.fields.description}
                 />
             <h1>{about.name}</h1>
-            <h2>{about.role} {about.location}</h2>
+            <h2>{about.role} <i className="fas fa-ice-cream fa-xs"></i> {about.location}</h2>
             {documentToReactComponents(about.blurb)}
             <p>
             <Link href="/work" >
