@@ -4,10 +4,15 @@ import utilStyles from '../../styles/utils.module.scss'
 
 export default function ContactSection(props){
     let contact = props.contact;
-    return (<section>
-        <h1>Contact</h1>
-        <p>I'd love to hear from you!</p>
-        <a href="https://www.codewars.com/users/doublexhelix/"><img src="https://www.codewars.com/users/doublexhelix/badges/large" /></a>
+    return (<section className={contactStyles.contact}>
+        <h1>{contact.entryTitle}</h1>
+        {documentToReactComponents(contact.text)}
+        {contact.pageLinks.map(link=>{
+            
+            return <a href={link.fields.linkUrl} aria-label={link.fields.linkText} target="_blank">
+                <i className={link.fields.iconClass + " fa-3x"} aria-hidden="true"></i>
+            </a>
+        })}
     </section>
     )
 }

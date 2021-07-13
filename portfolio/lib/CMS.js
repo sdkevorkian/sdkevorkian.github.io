@@ -17,6 +17,11 @@ export async function getNav(){
   return nav;
 }
 
+export async function getContact(){
+  const contact = await getById(contentIDs.CONTACT_ID)
+  return contact;
+}
+
 export async function getResume(){
   const nav = await getById(contentIDs.RESUME_ID)
   return nav;

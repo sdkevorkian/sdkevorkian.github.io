@@ -20,6 +20,7 @@ export default function Skills({nav}){
             </Head>
             <section>
                 <h1>Skills</h1>
+                <a href="https://www.codewars.com/users/doublexhelix/"><img src="https://www.codewars.com/users/doublexhelix/badges/large" /></a>
             </section>
         </Layout>
     )

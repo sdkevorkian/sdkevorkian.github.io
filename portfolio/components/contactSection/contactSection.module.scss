@@ -1,0 +1,14 @@
+@import '../../styles/vars';
+
+.contact {
+    svg {
+        margin: 0 2rem;
+        color: $plum;
+        
+        transition: all 0.5s ease-in-out;	
+        &:hover, &:focus {
+            color: $navy;
+            transform: rotate(-15deg);
+        }
+    }
+}
