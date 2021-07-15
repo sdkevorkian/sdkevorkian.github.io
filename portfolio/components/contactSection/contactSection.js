@@ -9,7 +9,7 @@ export default function ContactSection(props){
         {documentToReactComponents(contact.text)}
         {contact.pageLinks.map(link=>{
             
-            return <a href={link.fields.linkUrl} aria-label={link.fields.linkText} target="_blank">
+            return <a href={link.fields.linkUrl} aria-label={link.fields.linkText} target="_blank" key={link.sys.id}>
                 <i className={link.fields.iconClass + " fa-3x"} aria-hidden="true"></i>
             </a>
         })}

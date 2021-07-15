@@ -23,8 +23,13 @@ export async function getContact(){
 }
 
 export async function getResume(){
-  const nav = await getById(contentIDs.RESUME_ID)
-  return nav;
+  const resume = await getById(contentIDs.RESUME_ID)
+  return resume;
+}
+
+export async function getSkills(){
+    const skills = await getById(contentIDs.SKILLS_ID)
+    return skills
 }
 
 export async function getWorks(){
@@ -37,6 +42,6 @@ export async function getWorks(){
 }
 
 export async function getById(id){
-  const item = await client.getEntry(id);
-  return item.fields
+    const item = await client.getEntry(id);
+    return item.fields
 }
