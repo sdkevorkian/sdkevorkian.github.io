@@ -5,6 +5,9 @@
     p {
         text-align: left;
     }
+    svg {
+        margin: 0 0.5rem;
+    }
     @media(min-width: $min-md){
         text-align: left;
     }
