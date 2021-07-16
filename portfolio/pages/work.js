@@ -23,7 +23,7 @@ export default function WorkPage({nav, works}){
             </Head>
             <section>
                 <h1>Work</h1>
-                {/* todo: add blurb and some avanade projects */}
+                
                 <div className={utilStyles.grid}>
 
                 {works.items.map(work=>{

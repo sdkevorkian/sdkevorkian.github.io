@@ -6,7 +6,6 @@ export default function Resume(props){
     let resume = props.resume;
     return (<section className={resumeStyles.resume}>
         <h2>Resume</h2>
-            {/* //todo: add icons and blurb */}
         {documentToReactComponents(resume.text)}
         <div className={resumeStyles.btnContainer}>
             <i className="fas fa-file-pdf fa-3x"></i>
