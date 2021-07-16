@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout/layout'
 import About from '../components/about/about'
-import { getAbout, getNav } from '../lib/CMS'
+import { getAbout } from '../lib/CMS'
 
 export async function getStaticProps() {
-  const about = await getAbout()
-  const nav = await getNav()
+  const aboutPage = await getAbout()
+  const about = aboutPage.about.fields;
+  const nav = aboutPage.nav.fields;
   return {
     props: {
       about,

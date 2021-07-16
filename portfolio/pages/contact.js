@@ -2,12 +2,13 @@ import Head from 'next/head'
 import Layout from '../components/layout/layout'
 import Resume from '../components/resume/resume'
 import ContactSection from '../components/contactSection/contactSection'
-import { getNav, getContact, getResume } from '../lib/CMS'
+import { getContact } from '../lib/CMS'
 
 export async function getStaticProps() {
-    const nav = await getNav()
-    const resume = await getResume();
-    const contact = await getContact();
+    const contactPage = await getContact();
+    const contact = contactPage.contact.fields;
+    const nav = contactPage.nav.fields;
+    const resume = contactPage.resume.fields;
     return {
         props: {
             nav,

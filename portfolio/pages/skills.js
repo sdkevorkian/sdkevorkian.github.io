@@ -1,13 +1,13 @@
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import Head from 'next/head'
 import Layout from '../components/layout/layout'
-import { getNav, getSkills } from '../lib/CMS'
+import { getSkills } from '../lib/CMS'
 import skillsStyles from './skills.module.scss'
 
 export async function getStaticProps() {
-    const nav = await getNav();
-    const skills = await getSkills();
-        
+    const skillsPage = await getSkills();
+    const skills = skillsPage.skills.fields;
+    const nav = skillsPage.nav.fields;
     return {
         props: {
             nav,

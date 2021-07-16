@@ -8,8 +8,13 @@ const client = createClient({
 
 
 export async function getAbout(){
-    const aboutContent = await getById(contentIDs.ABOUT_ID)
-    return aboutContent;
+    const aboutContent = await client.getEntries({
+      'sys.id[in]': contentIDs.NAV_ID +','+contentIDs.ABOUT_ID
+    })
+    return {
+      about: aboutContent.items.find(item=>item.sys.id===contentIDs.ABOUT_ID),
+      nav: aboutContent.items.find(item=>item.sys.id===contentIDs.NAV_ID)
+    };
 }
 
 export async function getNav(){
@@ -18,18 +23,24 @@ export async function getNav(){
 }
 
 export async function getContact(){
-  const contact = await getById(contentIDs.CONTACT_ID)
-  return contact;
-}
-
-export async function getResume(){
-  const resume = await getById(contentIDs.RESUME_ID)
-  return resume;
+  const content = await client.getEntries({
+    'sys.id[in]': contentIDs.NAV_ID +','+contentIDs.CONTACT_ID + ',' +contentIDs.RESUME_ID
+  })
+  return {
+    contact: content.items.find(item=>item.sys.id===contentIDs.CONTACT_ID),
+    resume: content.items.find(item=>item.sys.id===contentIDs.RESUME_ID),
+    nav: content.items.find(item=>item.sys.id===contentIDs.NAV_ID)
+  };
 }
 
 export async function getSkills(){
-    const skills = await getById(contentIDs.SKILLS_ID)
-    return skills
+  const content = await client.getEntries({
+    'sys.id[in]': contentIDs.NAV_ID +','+contentIDs.SKILLS_ID
+  })
+  return {
+    skills: content.items.find(item=>item.sys.id===contentIDs.SKILLS_ID),
+    nav: content.items.find(item=>item.sys.id===contentIDs.NAV_ID)
+  };
 }
 
 export async function getWorks(){
