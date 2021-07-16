@@ -4,14 +4,18 @@ import About from '../components/about/about'
 import { getAbout } from '../lib/CMS'
 
 export async function getStaticProps() {
-  const aboutPage = await getAbout()
-  const about = aboutPage.about.fields;
-  const nav = aboutPage.nav.fields;
-  return {
-    props: {
-      about,
-      nav
+  try {
+    const aboutPage = await getAbout()
+    const about = aboutPage.about.fields;
+    const nav = aboutPage.nav.fields;
+    return {
+      props: {
+        about,
+        nav
+      }
     }
+  } catch(err){
+    return {notFound: true}
   }
 }
 export default function Home({about, nav}) {

@@ -5,14 +5,18 @@ import { getSkills } from '../lib/CMS'
 import skillsStyles from './skills.module.scss'
 
 export async function getStaticProps() {
-    const skillsPage = await getSkills();
-    const skills = skillsPage.skills.fields;
-    const nav = skillsPage.nav.fields;
-    return {
-        props: {
-            nav,
-            skills
+    try {
+        const skillsPage = await getSkills();
+        const skills = skillsPage.skills.fields;
+        const nav = skillsPage.nav.fields;
+        return {
+            props: {
+                nav,
+                skills
+            }
         }
+    } catch(err){
+        return {notFound:true}
     }
 }
 

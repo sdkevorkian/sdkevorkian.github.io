@@ -3,24 +3,29 @@ import Link from 'next/link'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Layout from '../../components/layout/layout'
 import Date from '../../components/date/date'
-import { getNav, getById, getWorks } from '../../lib/CMS'
+import { getWorks, getWork } from '../../lib/CMS'
 import utilStyles from '../../styles/utils.module.scss'
 import workStyles from './workpage.module.scss'
 
 export async function getStaticProps({ params }) {
-  const nav = await getNav()
-  const workItem = await getById(params.id)
-  return {
-    props: {
-      nav,
-      workItem
+  try {
+    const work = await getWork(params.id)
+    const workItem = work.work.fields;
+    const nav = work.nav.fields;
+    return {
+      props: {
+        nav,
+        workItem
+      }
     }
+  }catch (err){
+    return {notFound: true}
   }
+
 }
 
 export async function getStaticPaths() {
   const paths = await getWorks();
-  
   return {
     paths: paths.items.map((path)=>{
       return {'params':{'id':path.sys.id}}
