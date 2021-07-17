@@ -11,12 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
   env:
-      NEXT_PUBLIC_BASE_PATH: /sdkevorkian.github.io
+    NEXT_PUBLIC_BASE_PATH: /sdkevorkian.github.io
 
   strategy:
-      matrix:
-        node-version: [14.x]
-
+    matrix:
+      node-version: [14.x]
     steps:
       - name: Get files
         uses: actions/checkout@v2
