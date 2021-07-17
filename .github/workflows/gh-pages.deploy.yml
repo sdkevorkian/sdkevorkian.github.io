@@ -13,6 +13,7 @@ jobs:
   env:
       NEXT_PUBLIC_BASE_PATH: /sdkevorkian.github.io
 
+
     strategy:
       matrix:
         node-version: [14.x]
