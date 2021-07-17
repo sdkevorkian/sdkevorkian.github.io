@@ -12,11 +12,8 @@ jobs:
 
   env:
       NEXT_PUBLIC_BASE_PATH: /sdkevorkian.github.io
-      CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
-      CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
-      CONTENTFUL_PREVIEW_TOKEN: ${{ secrets.CONTENTFUL_PREVIEW_TOKEN }}
 
-    strategy:
+  strategy:
       matrix:
         node-version: [14.x]
 
@@ -32,6 +29,10 @@ jobs:
         run: npm ci
       - name: Build project
         run: npm run build
+        env:       
+          CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
+          CONTENTFUL_PREVIEW_TOKEN: ${{ secrets.CONTENTFUL_PREVIEW_TOKEN }}
       - name: Export static files
         run: npm run export
       - name: Add .nojekyll file
