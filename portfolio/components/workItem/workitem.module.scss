@@ -1,0 +1,41 @@
+@import '../../styles/_vars.scss';
+
+.workItem {
+    width: 100%;
+    color: $cream;
+    height: 300px;
+    padding: 10px;
+    a {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        position: relative;
+        color: $cream;
+        &::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to top, rgba(black, 0.65) 40%, rgba($brown, 0.65));
+        }
+    }
+    h2 {
+        z-index: 2;
+        margin-bottom: 3rem;
+    }
+    @media(min-width: $min-md){
+        width: 50%;
+        height: 400px;
+    }
+    &:hover a, a:focus{
+        &:before {
+            background: linear-gradient(to top, rgba(black, 0.65) 40%, rgba(white, 0.25));
+        }
+    }
+}

@@ -1,0 +1,39 @@
+
+@import '../../styles/vars';
+.nav {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    font-size: 24px;
+    a {
+        margin-bottom: 6px;
+        transition: all 0.5s;
+        &:first-child {
+            font-size: 32px;
+        }
+        &.active {
+            &:not(:first-child) {
+                text-decoration: underline;
+            }
+        }
+        &:first-child{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    @media(min-width: $min-md){
+        position: absolute;
+        top: 0;
+        right: 5%;
+        flex-flow: column;
+        align-items: flex-end;
+        a {
+            &.active {
+                font-size: 32px;
+            }
+        }        
+    }
+    @media(min-width: $min-xl){
+        right: 0;
+    }
+}

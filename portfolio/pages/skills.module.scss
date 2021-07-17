@@ -1,0 +1,22 @@
+@import '../styles/vars';
+
+.skills {
+    b {
+        font-size: 1.4rem;
+    }
+    span {
+        display: inline-block;
+        margin-top: 2.0rem;
+        font-size: 1.4rem;
+        @media(min-width: $min-md){
+            max-width: 80%;
+        }
+    }
+    h2 {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    img {
+        margin-top: 2.5rem;
+    }
+}

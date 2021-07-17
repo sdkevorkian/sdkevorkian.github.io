@@ -1,0 +1,17 @@
+@import '../../styles/_vars.scss';
+
+.resume {
+    svg {
+        margin-right: 1rem;
+        vertical-align: text-bottom;
+        color: $plum;
+    }
+    a {
+
+        font-size: 1.5rem;
+    }
+}
+
+.btnContainer {
+    margin: 1rem 0 2rem;
+}
