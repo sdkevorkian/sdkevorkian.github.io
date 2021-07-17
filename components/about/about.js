@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import utilStyles from '../../styles/utils.module.scss'
 import aboutStyles from './about.module.scss'
@@ -8,8 +7,7 @@ export default function About(props){
     let about = props.about;
     return (
         <div className={aboutStyles.about}>
-            <Image
-                priority
+            <img
                 src={'https:'+about.image.fields.file.url}
                 className={utilStyles.borderCircle}
                 height={175}
