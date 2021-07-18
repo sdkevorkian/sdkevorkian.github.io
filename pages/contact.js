@@ -27,7 +27,7 @@ export default function Contact({nav, contact, resume}){
     return (
         <Layout nav={nav}>
             <Head>
-                <title>Contact Sara Kevorkian</title>
+                <title>Contact | Sara Kevorkian</title>
             </Head>
             <ContactSection contact={contact}/>
             <Resume resume={resume}/>
