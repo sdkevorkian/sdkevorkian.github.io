@@ -17,9 +17,14 @@ export default function Layout({ children, home, nav }) {
           content="Sara Kevorkian portfolio front end web developer seattle wa"
         />
         <meta
+          property="og:description"
+          content="Sara Kevorkian portfolio front end web developer seattle wa"
+        />
+        <meta
           property="og:image"
           content="/images/self.jpg"
         />
+        <link rel="image_src" href="/images/self.jpg" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
