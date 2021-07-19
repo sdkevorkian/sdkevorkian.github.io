@@ -14,5 +14,9 @@
     blockquote {
         font-style: italic;
         font-size: 1.2rem;
+        p{
+            border-left: 0.25rem solid navy;
+            padding-lefT: 0.5rem;
+        }
     }
 }
