@@ -11,4 +11,8 @@
     @media(min-width: $min-md){
         text-align: left;
     }
+    blockquote {
+        font-style: italic;
+        font-size: 1.2rem;
+    }
 }
