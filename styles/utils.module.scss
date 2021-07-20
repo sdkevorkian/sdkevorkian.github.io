@@ -9,9 +9,12 @@
 }
 
 .grid {
-  margin-top: 120px;
+  margin-top: 1rem;
   display: flex;
   flex-flow: row wrap;
+  @media(min-width: $min-md){
+    margin-top: 4rem;
+  }
 }
 
 @mixin animatedBtn($color){

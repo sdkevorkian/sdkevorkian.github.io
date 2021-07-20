@@ -8,8 +8,14 @@
     svg {
         margin: 0 0.5rem;
     }
+    img {
+        margin: 0 auto;
+    }
     @media(min-width: $min-md){
         text-align: left;
+        img {
+            margin: 0;
+        }
     }
     blockquote {
         font-style: italic;
