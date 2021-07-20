@@ -29,7 +29,7 @@ export default function Layout({ children, home, nav }) {
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Benne&display=fallback" rel="stylesheet" />
       </Head>
       <header className={styles.header}>
         <Navigation nav={nav}/>
