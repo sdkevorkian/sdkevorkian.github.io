@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import Layout from '../../components/layout/layout'
-import Date from '../../components/date/date'
-import { getWorks, getWork } from '../../lib/CMS'
-import utilStyles from '../../styles/utils.module.scss'
+import Layout from '../../../components/layout/layout'
+import Date from '../../../components/date/date'
+import { getWorks, getWork } from '../../../lib/CMS'
+import utilStyles from '../../../styles/utils.module.scss'
 import workStyles from './workpage.module.scss'
 
 export async function getStaticProps({ params }) {
@@ -28,7 +28,7 @@ export async function getStaticPaths() {
   const paths = await getWorks();
   return {
     paths: paths.items.map((path)=>{
-      return {'params':{'id':path.sys.id}}
+      return {'params':{'id':path.sys.id, 'slug': path.fields.slug ? path.fields.slug : '' }}
     }),
     fallback: false
   }
