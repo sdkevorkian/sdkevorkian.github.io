@@ -34,7 +34,6 @@ export async function getStaticPaths() {
   }
 }
 export default function Work({ workItem, nav }) {
-  console.log(workItem)
   return (
     <Layout nav={nav}>
         <Head>
