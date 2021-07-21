@@ -11,7 +11,6 @@ export async function getStaticProps({ params }) {
   try {
     const workItem = await getWork(params.slug)
     const nav = await getNav();
-    console.log(workItem)
     return {
       props: {
         nav,
@@ -34,7 +33,6 @@ export async function getStaticPaths() {
   }
 }
 export default function Work({ workItem, nav }) {
-  console.log(workItem)
   return (
     <Layout nav={nav}>
         <Head>
