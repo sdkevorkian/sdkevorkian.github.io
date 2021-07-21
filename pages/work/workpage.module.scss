@@ -27,6 +27,9 @@
             font-size: 3.5rem;
         }
     }
+    p {
+        @include workPageConstraint();
+    }
 }
 
 .description {
@@ -37,7 +40,6 @@
 }
 
 .btnContainer {
-    @include workPageConstraint();
     a {
         margin-right: 2rem;
     }

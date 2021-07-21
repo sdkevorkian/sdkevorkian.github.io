@@ -43,7 +43,8 @@ export default function Work({ workItem, nav }) {
           <h1>{workItem.name}</h1>
 
           <div className={workStyles.description}>{documentToReactComponents(workItem.description)}</div>
-          <p><b>Last updated:</b> <Date dateString={workItem.lastUpdated} /></p>
+          <p><b>Technologies:</b> {workItem.technologies.join(', ').toString()}</p>
+          <p><b>Last Updated:</b> <Date dateString={workItem.lastUpdated} /></p>
           <div className={workStyles.btnContainer}>
             {workItem.liveSite && <a className={utilStyles.externalBtn} href={workItem.liveSite} target="_blank">Live Site</a>}
             {workItem.githubUrl && <a className={utilStyles.externalBtn} href={workItem.githubUrl} target="_blank">GitHub</a>}
