@@ -31,9 +31,9 @@ export default function Skills({nav, skills}){
                 <h1>Skills</h1>
                 {skills.paragraph && documentToReactComponents(skills.paragraph)}
                 <div>
-                    <span><h2>Top skills:</h2> {skills.topSkills}</span>
-                    <span><h2>Additional skills:</h2> {skills.exploringSkills}</span>
-                    <span><h2>Soft skills:</h2> {skills.softSkills}</span>
+                    <span><h2>Top Skills:</h2> {skills.topSkills}</span>
+                    <span><h2>Additional Skills:</h2> {skills.exploringSkills}</span>
+                    <span><h2>Soft Skills:</h2> {skills.softSkills}</span>
                 </div>
                 <a href="https://www.codewars.com/users/doublexhelix/"><img src="https://www.codewars.com/users/doublexhelix/badges/large" /></a>
             </section>
