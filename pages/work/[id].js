@@ -33,8 +33,8 @@ export async function getStaticPaths() {
     fallback: false
   }
 }
-
 export default function Work({ workItem, nav }) {
+  console.log(workItem)
   return (
     <Layout nav={nav}>
         <Head>
@@ -48,6 +48,10 @@ export default function Work({ workItem, nav }) {
           <div className={workStyles.btnContainer}>
             {workItem.liveSite && <a className={utilStyles.externalBtn} href={workItem.liveSite} target="_blank">Live Site</a>}
             {workItem.githubUrl && <a className={utilStyles.externalBtn} href={workItem.githubUrl} target="_blank">GitHub</a>}
+            {!workItem.liveSite && !workItem.githubUrl && 
+              <p>Unfortunately, due to the confidential nature of the work I cannot share the URL or codebase,
+                <Link href="/contact"><a> but I would be glad to talk about this project!</a></Link>
+              </p>}
           </div>
           <img src={'https:' + workItem.image.fields.file.url}
             alt={workItem.image.fields.description}/>

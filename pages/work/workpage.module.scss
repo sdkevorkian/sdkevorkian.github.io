@@ -1,6 +1,20 @@
 @import '../../styles/_vars.scss';
 
+@mixin workPageConstraint(){
+    max-width: 550px;
+    @media(min-width: $min-lg){
+        max-width: 750px;
+    }
+    @media(min-width: $min-xl){
+        max-width: 900px;
+    }
+}
+
 .workPage {
+    h1 {
+        font-size: 3rem;
+        @include workPageConstraint();
+    }
     img {
         max-height: 600px;
         margin: 1rem 0 2rem;
@@ -8,22 +22,26 @@
             max-height: 400px;
         }
     }
+    @media(min-width: $min-lg){
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
 }
 
 .description {
-    max-width: 550px;
+    @include workPageConstraint();
     p {
         text-align: justify;
-    }
-    @media(min-width: $min-lg){
-        max-width: 750px;
     }
 }
 
 .btnContainer {
+    @include workPageConstraint();
     a {
         margin-right: 2rem;
     }
+
 }
 
 .contributor {
