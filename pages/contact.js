@@ -30,7 +30,6 @@ export default function Contact({nav, contact, resume}){
                 <title>Contact | Sara Kevorkian</title>
             </Head>
             <ContactSection contact={contact}/>
-            <Resume resume={resume}/>
         </Layout>
     )
 }
